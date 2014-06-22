@@ -5,14 +5,8 @@
    (decllist
      (decl->procedure: |myPro|
        
-       (block
-         (stmtlist
-           )))
+       (block))
      (decl->function: |fun|
        
        (type->size=0, kind=ident: |integer|)
-       (block
-         (stmtlist
-           ))))
-   (stmtlist
-     )))
+       (block)))))

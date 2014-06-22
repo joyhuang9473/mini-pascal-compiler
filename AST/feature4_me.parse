@@ -20,6 +20,4 @@
              (type->size=0, kind=ident: |integer|))
            (field |y|
              (field offset: 0)
-             (type->size=0, kind=ident: |integer|))))))
-   (stmtlist
-     )))
+             (type->size=0, kind=ident: |integer|))))))))

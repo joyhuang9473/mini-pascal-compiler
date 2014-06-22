@@ -4,6 +4,4 @@
  (block
    (decllist
      (decl->variable: |n|
-       (type->size=0, kind=ident: |integer|)))
-   (stmtlist
-     )))
+       (type->size=0, kind=ident: |integer|)))))

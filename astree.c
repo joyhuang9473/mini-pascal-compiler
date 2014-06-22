@@ -15,7 +15,7 @@ PROGRAM *make_program (DECLLIST *dl, BLOCK *b)
 
 BLOCK *make_block (DECLLIST *dl, STMTLIST *s)
 {
-  BLOCK *blk = anew(BLOCK);
+  BLOCK *blk = anew (BLOCK);
   blk->block_decls = dl;
   blk->block_stmts = s;
   return blk;
@@ -269,6 +269,8 @@ STMT *make_stmt (STMTKIND k)
 
 STMTLIST *make_stmts (STMT *stmt, STMTLIST *stmts)
 {
+  if ( ! stmt ) return stmts;
+
   STMTLIST *s = anew (STMTLIST);
   s->this = stmt;
   s->rest = stmts;
