@@ -28,5 +28,4 @@
            (expr->[rhs] call: |write|
              (exprlist
                (expr->[value='other'][rhs] string: 'other'
-                 expr_type->(type->size=0, kind=STRING)))))))
-     )))
+                 expr_type->(type->size=0, kind=STRING))))))))))

@@ -230,9 +230,7 @@ EltType
           Feature 3 (continue)
           Call your pre-implemented function here.
         */
-          {
-            $$ = make_elt_type ($2, $3);
-          }
+          { $$ = make_elt_type ($2, $3); }
         ;
 
 SimpleType
@@ -267,11 +265,12 @@ FieldList
 
 OptFieldList
         :
-          { $$ = 0; }
+          { $$ =  0; }
         | ';'
-          { $$ = 0; }
+          { $$ =  0; }
         | ';' FieldList
 	  { $$ = $2; }
+
         ;
 
 ProcedureDeclaration
@@ -550,7 +549,7 @@ ForStatement
           Fill the following rule action and implement the function in astree.c 
           if you need.
         */
-         { $$ = make_for_stmt ($2, $4, $6, $3, $8, TRUE); }
+         { $$ = make_for_stmt ($2, $4, $6, $8, $5); }
         ;
 
 Direction
@@ -638,3 +637,4 @@ parseinit ()
   init_decls ();
   init_regtable ();
 }
+

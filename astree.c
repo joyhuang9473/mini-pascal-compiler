@@ -320,15 +320,14 @@ STMTREPEAT *make_stmtrepeat (EXPR *expr, STMTLIST *stmts)
   return r;
 }
 
-STMTFOR *make_stmtfor (IDENT *name, EXPR *init, EXPR *to, int n, STMT *stmt, BOOLEAN upward)
+STMTFOR *make_stmtfor (IDENT *name, EXPR *init, EXPR *to, STMT *stmt, int upward)
 {
   STMTFOR *f = anew (STMTFOR);
   f->for_name = make_binding (name);
   f->for_init = init;
   f->for_to = to;
-  f->for_limit_obj = make_int_object (n);
   f->for_stmt = stmt;
-  f->for_upward = upward;
+  f->for_upward = ( upward == 0 ) ? FALSE : TRUE;
   return f;
 }
 
@@ -401,10 +400,10 @@ STMT *make_repeat_stmt (EXPR *expr, STMTLIST *stmts)
   return s;
 }
 
-STMT *make_for_stmt (IDENT *name, EXPR *init, EXPR *to, int n, STMT *stmt, BOOLEAN upward)
+STMT *make_for_stmt (IDENT *name, EXPR *init, EXPR *to, STMT *stmt, int upward)
 {
   STMT *s = make_stmt (StmtFor_);
-  s->s.forx = make_stmtfor(name, init, to, n, stmt, upward);
+  s->s.forx = make_stmtfor(name, init, to, stmt, upward);
   return s;
 }
 

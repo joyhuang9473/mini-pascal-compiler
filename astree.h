@@ -53,7 +53,7 @@ extern STMTWHILE   *make_stmtwhile   (EXPR *test, STMT *body);
 extern STMTCASE    *make_stmtcase    (EXPR *expr, CASELIST *list);
 extern STMTIF      *make_stmtif      (EXPR *expr, STMT *then, STMT *optElse);
 extern STMTREPEAT  *make_stmtrepeat  (EXPR *expr, STMTLIST *stmts);
-extern STMTFOR     *make_stmtfor     (IDENT *name, EXPR *init, EXPR *to, int n, STMT *stmt, BOOLEAN upward);
+extern STMTFOR     *make_stmtfor     (IDENT *name, EXPR *init, EXPR *to, STMT *stmt, int upward);
 
 /* CASE LIST */
 
@@ -69,7 +69,7 @@ extern STMT *make_compound_stmt (STMTLIST *stmts);
 extern STMT *make_case_stmt     (EXPR *expr, CASELIST *list);
 extern STMT *make_if_stmt       (EXPR *expr, STMT *then, STMT *optElse);
 extern STMT *make_repeat_stmt   (EXPR *expr, STMTLIST *stmts);
-extern STMT *make_for_stmt      (IDENT *name, EXPR *init, EXPR *to, int n, STMT *stmt, BOOLEAN upward);
+extern STMT *make_for_stmt      (IDENT *name, EXPR *init, EXPR *to, STMT *stmt, int upward);
 
 /* general functions */
 

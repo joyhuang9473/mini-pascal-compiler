@@ -17,7 +17,6 @@
          expr_type->(type->size=4, kind=INTEGER))
        (expr->[value=20][rhs] int: 20
          expr_type->(type->size=4, kind=INTEGER))
-       [value=292]
        (upward:1)
        (stmt->compoundstmt:
          (stmtlist
@@ -25,6 +24,4 @@
              (expr->[rhs] binding: |sum|)
              (expr->[rhs] binexp: op(+)
                (expr->[rhs] binding: |sum|)
-               (expr->[rhs] binding: |a|)))
-           )))
-     )))
+               (expr->[rhs] binding: |a|)))))))))

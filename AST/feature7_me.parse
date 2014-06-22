@@ -20,5 +20,4 @@
          (stmt->assignstmt:
            (expr->[rhs] binding: |n|)
            (expr->[value=0][rhs] int: 0
-             expr_type->(type->size=4, kind=INTEGER)))))
-     )))
+             expr_type->(type->size=4, kind=INTEGER))))))))

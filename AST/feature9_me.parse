@@ -21,6 +21,4 @@
            (expr->[rhs] binexp: op(-)
              (expr->[rhs] binding: |sum|)
              (expr->[value=1][rhs] int: 1
-               expr_type->(type->size=4, kind=INTEGER))))
-         ))
-     )))
+               expr_type->(type->size=4, kind=INTEGER)))))))))
