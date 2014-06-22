@@ -1,0 +1,19 @@
+(program
+ (decllist
+   (decl->program: |feature|))
+ (block
+   (decllist
+     (decl->type: |a|
+       (type->size=0, kind=array:
+         (type->size=4, kind=subrange:
+           (expr->[value=0][rhs] int: 0
+             expr_type->(type->size=4, kind=INTEGER))
+           (expr->[value=9][rhs] int: 9
+             expr_type->(type->size=4, kind=INTEGER)))
+         (type->size=0, kind=array:
+           (type->size=4, kind=subrange:
+             (expr->[value=0][rhs] int: 0
+               expr_type->(type->size=4, kind=INTEGER))
+             (expr->[value=9][rhs] int: 9
+               expr_type->(type->size=4, kind=INTEGER)))
+           (type->size=0, kind=ident: |integer|)))))))

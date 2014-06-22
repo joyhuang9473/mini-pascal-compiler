@@ -1,0 +1,6 @@
+(program
+ (decllist
+   (decl->program: |feature|))
+ (block
+   (stmtlist
+     )))

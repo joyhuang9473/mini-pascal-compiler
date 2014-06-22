@@ -1,0 +1,26 @@
+(program
+ (decllist
+   (decl->program: |feature|))
+ (block
+   (decllist
+     (decl->variable: |sum|
+       (type->size=0, kind=ident: |integer|)))
+   (stmtlist
+     (stmt->assignstmt:
+       (expr->[rhs] binding: |sum|)
+       (expr->[value=10][rhs] int: 10
+         expr_type->(type->size=4, kind=INTEGER)))
+     (stmt->repeatstmt:
+       (expr->[rhs] binexp: op(=)
+         (expr->[rhs] binding: |sum|)
+         (expr->[value=0][rhs] int: 0
+           expr_type->(type->size=4, kind=INTEGER)))
+       (stmtlist
+         (stmt->assignstmt:
+           (expr->[rhs] binding: |sum|)
+           (expr->[rhs] binexp: op(-)
+             (expr->[rhs] binding: |sum|)
+             (expr->[value=1][rhs] int: 1
+               expr_type->(type->size=4, kind=INTEGER))))
+         ))
+     )))

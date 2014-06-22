@@ -1,0 +1,23 @@
+(program
+ (decllist
+   (decl->program: |feature|))
+ (block
+   (decllist
+     (decl->type: |n|
+       (type->size=0, kind=record:
+         (fieldlist
+           (field |a|
+             (field offset: 0)
+             (type->size=0, kind=ident: |integer|))
+           (field |b|
+             (field offset: 0)
+             (type->size=0, kind=ident: |integer|))
+           (field |c|
+             (field offset: 0)
+             (type->size=0, kind=ident: |integer|))
+           (field |x|
+             (field offset: 0)
+             (type->size=0, kind=ident: |integer|))
+           (field |y|
+             (field offset: 0)
+             (type->size=0, kind=ident: |integer|))))))))

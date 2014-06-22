@@ -1,0 +1,12 @@
+(program
+ (decllist
+   (decl->program: |feature|))
+ (block
+   (decllist
+     (decl->procedure: |myPro|
+       
+       (block))
+     (decl->function: |fun|
+       
+       (type->size=0, kind=ident: |integer|)
+       (block)))))

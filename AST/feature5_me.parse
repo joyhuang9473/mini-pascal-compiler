@@ -1,0 +1,18 @@
+(program
+ (decllist
+   (decl->program: |feature|))
+ (block
+   (decllist
+     (decl->procedure: |myPro|
+       
+       (block
+         (stmtlist
+           )))
+     (decl->function: |fun|
+       
+       (type->size=0, kind=ident: |integer|)
+       (block
+         (stmtlist
+           ))))
+   (stmtlist
+     )))
